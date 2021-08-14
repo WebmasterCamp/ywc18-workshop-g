@@ -1,29 +1,8 @@
 import React from "react";
 import CarouselComponent from "../components/Carousel/CarouselComponent";
+import SingleCarousel from "../components/SingleCarousel/SingleCarousel";
+import { mockFarmers, mockSeasonalProduct } from "../utilities/Mocks";
 import "./Home.scss";
-
-const mockSeasonalProduct = [
-  {
-    image: "/images/watermelon.webp",
-    description: "WATERMELON",
-    linkTo: "products/watermelon"
-  },
-  {
-    image: "/images/watermelon.webp",
-    description: "WATERMELON",
-    linkTo: "products/watermelon"
-  },
-  {
-    image: "/images/watermelon.webp",
-    description: "WATERMELON",
-    linkTo: "products/watermelon"
-  },
-  {
-    image: "/images/watermelon.webp",
-    description: "WATERMELON",
-    linkTo: "products/watermelon"
-  },
-];
 
 const Home: React.FC = () => {
   return (
@@ -32,9 +11,9 @@ const Home: React.FC = () => {
         <div className="sample-box"></div>
       </div>
       <CarouselComponent 
-        title="Seasonal product"
-        viewAllLink="/viewAll"
-        cards={mockSeasonalProduct} />
+        title="Our farmer"
+        subtitle="more than hundreds of qualified farmers across Thailand in our community"
+        cards={mockFarmers} />
     </main>
   );
 };
