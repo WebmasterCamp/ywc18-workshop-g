@@ -12,6 +12,7 @@
     border: 1px solid $border-color;
     
     .upper {
+        width: 100%;
         flex-grow: 1;
         background-color: grey;
 
@@ -33,6 +34,22 @@
             margin-top: 0.5em;
             font-weight: bold;
             color: $light-green-color;
+        }
+    }
+
+    .tag-container {
+        display: flex;
+        padding: 8px;
+        
+        > span {
+            padding: 0 16px;
+            background-color: #E1BB00;
+            color: white;
+            border-radius: 16px;
+
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
         }
     }
 }

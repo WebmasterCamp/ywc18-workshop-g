@@ -10,13 +10,14 @@ interface ProductsInterface {
 interface Props {
   title: string;
   data: ProductsInterface;
+  mode?: "buy" | "care";
   onClick?: EventHandler<[]>;
 }
 
 const ProductGrid: React.FC<Props> = (props: Props) => {
-  const handleProductClick = () => {
-    props.onClick?.();
-  };
+  // const handleProductClick = () => {
+  //   props.onClick?.();
+  // };
 
   const renderPackages = () => {
     return Object.entries(props.data).map(([ k, v ], i) => {

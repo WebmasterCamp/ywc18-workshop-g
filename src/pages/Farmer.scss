@@ -4,4 +4,19 @@
         max-width: 900px;
         margin: 0 auto;
     }
+
+    .profile-grid {
+        display: grid;
+        grid-template-columns: 288px 1fr;
+    }
+
+    .fullname {
+        font-weight: bold;
+    }
+
+    .story-container {
+        padding: 1em;
+        margin: 1em 0;
+        background-color: #D8EEA5;
+    }
 }
