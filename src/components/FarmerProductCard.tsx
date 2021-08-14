@@ -2,19 +2,24 @@ import "./FarmerProductCard.scss";
 import React from "react";
 
 interface Props {
-  onClick: EventHandler<[]>;
+  imgSrc: string;
+  label: string;
+  desc: string;
+  remain: number;
 }
 
-const FarmerProductCard: React.FC<Props> = (props: Props) => {
+const FarmerProductCard: React.FC<ProductInterface> = (props: ProductInterface) => {
   return (
-    <div className="farmer-product-card" onClick={props.onClick}>
-      <div className="upper">
-
-      </div>
-      <div className="lower">
+    <button className="farmer-product-card">
+      <div className="upper" style={{ backgroundImage: `url(${props.productImages?.[0]})` }}>
         
       </div>
-    </div>
+      <div className="lower">
+        <div className="label">{props.productName}</div>
+        <div className="desc">{props.productBio}</div>
+        <div className="remain">฿ {props.totalPrice} /กก.</div>
+      </div>
+    </button>
   );
 };
 
