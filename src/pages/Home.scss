@@ -9,6 +9,7 @@ main {
         max-width: 764px;
         margin: 2em auto;
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1em;
     }
 
@@ -73,6 +74,10 @@ main {
     main {
         .sml-grid {
             grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
+        }
+
+        .instruction-container {
+            grid-template-columns: 1fr;
         }
     }
 
