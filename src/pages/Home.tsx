@@ -1,11 +1,11 @@
+import "./Home.scss";
 import React from "react";
 import CarouselComponent from "../components/Carousel/CarouselComponent";
 import { mockFarmers } from "../utilities/Mocks";
 import InstructionCard from "../components/InstructionCard";
-import PackageCard from "../components/PackageCard";
 import ProductCard from "../components/ProductCard";
-import "./Home.scss";
 import HomeBanner from "../components/HomeBanner";
+import { Link } from "react-router-dom";
 
 const mockInstructions = [
   {
@@ -54,14 +54,6 @@ const Home: React.FC = () => {
     });
   };
 
-  const renderPackages = () => {
-    return mockPackages.map((x, i) => {
-      return (
-        <PackageCard key={i} />
-      );
-    });
-  };
-
   return (
     <>
       <main id="home">
@@ -71,7 +63,7 @@ const Home: React.FC = () => {
             {renderInstructions()}
           </div>
         </div>
-        <CarouselComponent 
+        <CarouselComponent
           title="Our farmers"
           subtitle="more than hundreds of qualified farmers across Thailand in our community"
           cards={mockFarmers}
@@ -83,7 +75,9 @@ const Home: React.FC = () => {
               {renderProducts()}
             </div>
             <div className="btn-container">
-              <button className="btn">View All</button>
+              <Link to="/products">
+                <button className="btn">View All</button>
+              </Link>
             </div>
           </div>
         </div>
