@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Product from "./pages/Product";
 import AllProducts from "./pages/AllProducts";
 import Farmer from "./pages/Farmer";
+import Checkout from "./pages/Checkout";
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,9 @@ const App: React.FC = () => {
         </Route>
         <Route path="/product/:id">
           <Product />
+        </Route>
+        <Route path="/checkout">
+          <Checkout />
         </Route>
         <Route path="*">
           <div>404</div>

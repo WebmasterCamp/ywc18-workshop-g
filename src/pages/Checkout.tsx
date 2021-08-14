@@ -2,7 +2,7 @@ import React from "react";
 import { LocationIcon } from "../components/Icons";
 import "./Checkout.scss";
 
-const Checkout = () => {
+const Checkout: React.FC = () => {
   return (
     <div>
       <div className="address-container">
