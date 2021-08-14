@@ -1,0 +1,137 @@
+.checkout-container {
+    > div:nth-child(odd) {
+        padding: 20px 22px;
+    }
+
+    .horizontal {
+        height: 1px;
+        background-color: #E5E5E5;
+        width: 100%;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > button {
+            font-size: 11px;
+            color: #7FA720;
+        }
+    }
+
+    .address-container {
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            > svg {
+                min-height: 27;
+                min-width: 17px;
+                margin-right: 16px;
+            }
+
+            > p {
+                width: 90%;
+                max-width: 500px;
+            }
+        }
+    }
+
+    .fruit-container {
+
+        .content {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            width: 112px;
+            height: 128px;
+            margin-right: 28px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        p:first-child {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        p:last-child {
+            font-family: Sarabun;
+            font-size: 12px;
+        }
+
+        .select-number {
+            margin-top: 12px;
+            white-space: nowrap;
+
+            input {
+                margin-left: 10px;
+                width: 60px;
+                border: 1px solid #44AF50;
+                border-radius: 4px;
+                text-align: center;
+            }
+
+            span:last-child {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .total {
+        .text-button {
+            font-size: 16px;
+            color: #000000;
+        }
+    }
+
+    .payment-container {
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                margin-top: 22px;
+            }
+
+            label {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px;
+        white-space: nowrap;
+
+        button {
+            font-size: 16px;
+            width: 50%;
+            padding: 8px 20px;
+            margin: 0 20px;
+            max-width: 400px;
+        }
+
+        button:first-child {
+            border: 1px solid #44AF50;
+            border-radius: 4px;
+            color: #44AF50;
+        }
+
+        button:last-child {
+            background: #44AF50;
+            border-radius: 4px; 
+            color: white;
+        }
+    }
+}
+
