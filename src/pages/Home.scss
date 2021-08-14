@@ -2,12 +2,19 @@ main {
     padding: 1em;
 
     .margin-container {
-        max-width: 800px;
+        max-width: 900px;
         margin: 0 auto;
 
         .sample-box {
             background-color: grey;
             height: 300px;
         }
+    }
+
+    .instruction-container {
+        max-width: 764px;
+        margin: 2em auto;
+        display: grid;
+        gap: 1em;
     }
 }
