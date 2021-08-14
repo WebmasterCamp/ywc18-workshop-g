@@ -9,16 +9,24 @@ import { Link } from "react-router-dom";
 
 const mockInstructions = [
   {
-    text: "Explore Our Story"
+    imgSrc: "./images/instruction-1.svg",
+    text: "ค้นหาผลิตภัณฑ์",
+    desc: "สำรวจไร่ ฟาร์ม และผลิตภัณฑ์ที่คุณอยากสนับสนุน"
   },
   {
-    text: "Click to Adopt"
+    imgSrc: "./images/instruction-2.svg",
+    text: "เลือกต้นผลไม้ที่คุณอยากร่วมดูแล",
+    desc: "ติดตามความเคลื่อนไหวผ่านระบบ Subscription"
   },
   {
-    text: "Wait to Grow"
+    imgSrc: "./images/instruction-3.svg",
+    text: "ติดตามการเติบโต",
+    desc: "ดูการเติบโตของพวกเขาได้ในทุกๆเดือน"
   },
   {
-    text: "Recieve Your Fruit"
+    imgSrc: "./images/instruction-4.svg",
+    text: "รับผลผลิตที่ส่งตรงถึงบ้าน",
+    desc: "อิ่มเอมกับผลผลิตที่คุณสร้างขึ้นมาเอง"
   }
 ];
 
@@ -31,17 +39,11 @@ const mockTopProducts = [
   {}
 ];
 
-const mockPackages = [
-  {},
-  {},
-  {}
-];
-
 const Home: React.FC = () => {
   const renderInstructions = () => {
     return mockInstructions.map((x, i) => {
       return (
-        <InstructionCard key={x.text} index={i + 1} text={x.text} />
+        <InstructionCard key={x.text} index={i + 1} {...x} />
       );
     });
   };
