@@ -1,10 +1,10 @@
-.package-card {
+.farmer-product-card {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
 
-    height: 328px;
-    width: 246px;
+    height: 268px;
+    width: 100%;
 
     .upper {
         flex-grow: 1;
@@ -14,5 +14,13 @@
     .lower {
         height: 64px;
         background-color: lightgrey;
+    }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+    .farmer-product-card {
+        height: 196px;
     }
 }

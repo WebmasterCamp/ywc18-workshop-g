@@ -29,16 +29,16 @@ export const mockFarmers = [
   {
     image: "/images/farmer.webp",
     title: "",
-    linkTo: ""
+    linkTo: "farmers/1234"
   },
   {
     image: "/images/farmer.webp",
     title: "",
-    linkTo: ""
+    linkTo: "farmers/1234"
   },
   {
     image: "/images/farmer.webp",
     title: "",
-    linkTo: ""
+    linkTo: "farmers/1234"
   },
 ];

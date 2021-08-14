@@ -1,10 +1,11 @@
-import React, { Component } from "react";
 import "./App.scss";
+import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
-import ViewAll from "./pages/ViewAll";
+import AllProducts from "./pages/AllProducts";
+import Farmer from "./pages/Farmer";
 
 const App: React.FC = () => {
   return (
@@ -14,10 +15,13 @@ const App: React.FC = () => {
         <Route path="/" exact={true}>
           <Home />
         </Route>
-        <Route path="/viewAll" exact={true}>
-          <ViewAll />
+        <Route path="/farmers/:id">
+          <Farmer />
         </Route>
-        <Route path="/products/:id" exact={true}>
+        <Route path="/products">
+          <AllProducts />
+        </Route>
+        <Route path="/products/:id">
           <Product />
         </Route>
         <Route path="*">
