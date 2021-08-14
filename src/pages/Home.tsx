@@ -3,6 +3,7 @@ import CarouselComponent from "../components/Carousel/CarouselComponent";
 import { mockFarmers } from "../utilities/Mocks";
 import InstructionCard from "../components/InstructionCard";
 import "./Home.scss";
+import HomeBanner from "../components/HomeBanner";
 
 const mockInstructions = [
   {
@@ -30,16 +31,16 @@ const Home: React.FC = () => {
 
   return (
     <main id="home">
+      <HomeBanner />
       <div className="margin-container">
-        <div className="sample-box"></div>
         <div className="instruction-container">
           {renderInstructions()}
         </div>
+        <CarouselComponent 
+          title="Our farmer"
+          subtitle="more than hundreds of qualified farmers across Thailand in our community"
+          cards={mockFarmers} />
       </div>
-      <CarouselComponent 
-        title="Our farmer"
-        subtitle="more than hundreds of qualified farmers across Thailand in our community"
-        cards={mockFarmers} />
     </main>
   );
 };
