@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Header from "../components/Header";
 import "./Product.scss";
 import Carousel, { slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import { useParams } from "react-router-dom";
 import { mockProducts } from "../utilities/Mocks";
 
-interface ProductInterface {
+export interface ProductInterface {
   productId: string;
   productImages?: string[];
   productName: string;
