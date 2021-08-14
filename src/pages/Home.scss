@@ -1,3 +1,13 @@
-#null {
-    
+main {
+    padding: 1em;
+
+    .margin-container {
+        max-width: 800px;
+        margin: 0 auto;
+
+        .sample-box {
+            background-color: grey;
+            height: 300px;
+        }
+    }
 }

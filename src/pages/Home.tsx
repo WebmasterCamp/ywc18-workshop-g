@@ -1,5 +1,6 @@
 import React from "react";
 import CarouselComponent from "../components/Carousel/CarouselComponent";
+import "./Home.scss";
 
 const mockSeasonalProduct = [
   {
@@ -26,12 +27,15 @@ const mockSeasonalProduct = [
 
 const Home: React.FC = () => {
   return (
-    <div id="home">
+    <main id="home">
+      <div className="margin-container">
+        <div className="sample-box"></div>
+      </div>
       <CarouselComponent 
         title="Seasonal product"
         viewAllLink="/viewAll"
         cards={mockSeasonalProduct} />
-    </div>
+    </main>
   );
 };
 
