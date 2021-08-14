@@ -67,9 +67,9 @@ const Home: React.FC = () => {
         </div>
         <CarouselComponent
           title="เกษตรกรของเรา"
-          subtitle="เกษตรกรที่เติบโตไปพร้อมกับเรา 
-          Seedtory ทำงานร่วมกับเกษตรกรผู้ปลูกผลไม้กว่า 50 ราย
-          จากทุกภูมิภาคของประเทศไทย"
+          subtitle={`เกษตรกรที่เติบโตไปพร้อมกับเรา \n
+          Seedtory ทำงานร่วมกับเกษตรกรผู้ปลูกผลไม้กว่า 50 ราย \n
+          จากทุกภูมิภาคของประเทศไทย`}
           cards={mockFarmers}
         />
         <div className="margin-container">

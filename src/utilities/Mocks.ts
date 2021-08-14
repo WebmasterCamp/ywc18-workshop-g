@@ -1,5 +1,7 @@
 // Seasonal Products
 
+import { totalmem } from "os";
+
 export const mockSeasonalProduct = [
   {
     image: "/images/watermelon.webp",
@@ -27,18 +29,21 @@ export const mockSeasonalProduct = [
 
 export const mockFarmers = [
   {
-    image: "/images/farmer.webp",
-    title: "",
+    image: "/images/farmer-1.webp",
+    title: "ลุงพล",
+    description: "มังคุด - recommend",
     linkTo: "farmers/1234"
   },
   {
-    image: "/images/farmer.webp",
-    title: "",
+    image: "/images/farmer-3.webp",
+    title: "ป้าแต๋น",
+    description: "มะม่วง - recommend",
     linkTo: "farmers/1234"
   },
   {
-    image: "/images/farmer.webp",
-    title: "",
+    image: "/images/farmer-2.webp",
+    title: "ลุงเริง",
+    description: "ส้มโอ - recommend",
     linkTo: "farmers/1234"
   },
 ];
@@ -48,13 +53,15 @@ export const mockFarmers = [
 export const mockProduct: ProductInterface = {
   productId: "0",
   productImages: ["/images/watermelon.webp", "/images/watermelon.webp", "/images/watermelon.webp"],
-  productName: "มังคุดจ้า",
-  productBio: "โตตลอดปี ออกผลกินจนอิ่มไปเลยจ้า ปีนึงออกผลทุก 3 เดือน ...",
-  tag: ["seasonal"],
+  productName: "ต้นมังคุด",
+  productBio: "ต้นมังคุดที่ผ่านการคัดเลือกจากพ่อแม่พันธุ์ชั้นดี สู่รุ่นลูกคุณภาพสูงขนาด 24 CM",
+  tag: ["ยอดฮิต"],
+  duration: 1,
   farm: "สวนลุงชัย",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor condimentum lacinia quis vel eros donec ac odio. Volutpat ac tincidunt vitae semper quis lectus nulla. Arcu ac tortor dignissim convallis aenean et. Id porta nibh venenatis cras sed felis eget velit aliquet.",
+  description: "“การดูเเลมังคุดเนี่ย สิ่งแรกที่ต้องคำนึงเลยคือเรื่องสภาพอากาศครับ เพราะมังคุดชอบอากาศร้อนชื้น ต้องพยายามไม่ให้...”",
   farmerImage: "/images/farmer.webp",
-  farmerImageCaption: "ลุงชัย"
+  farmerImageCaption: "ลุงชัย",
+  totalPrice: 300,
 };
 
 // PRODUCTS 
@@ -69,6 +76,8 @@ interface ProductInterface {
   description: string;
   farmerImage?: string;
   farmerImageCaption?: string;
+  duration?: number;
+  totalPrice: number;
 }
 
 interface ProductsInterface {

@@ -1,7 +1,8 @@
 .card-with-desc {
-    height: 143px;
-    min-width: 123px;
+    height: 200px;
+    min-width: 135px;
     position: relative;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.25));
     
     .card-image {
         height: 100%;
@@ -9,13 +10,30 @@
         object-fit: cover;
     }
 
-    .description {
-        margin: 0;
+
+    .text-container {
         position: absolute;
-        background-color: white;
         padding: 0 16px;
-        bottom: 0;
+        bottom: 20px;
         width: 100%;
+
+        .title {
+            font-weight: 500;
+            margin: 0;
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    
+        .description {
+            margin: 0;
+            color: white;
+            font-family: Sarabun;
+            font-weight: 500;
+            font-size: 12px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
     }
 }
 

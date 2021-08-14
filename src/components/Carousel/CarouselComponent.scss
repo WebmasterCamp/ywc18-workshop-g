@@ -1,10 +1,20 @@
 .header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 
     > * {
         margin: 0;
+    }
+
+    .subtitle {
+        font-family: Sarabun;
+        margin: 10px 0 24px 0;
+        max-width: 400px;
+        white-space: pre-line;
+        line-height: 10px;
+        font-size: 11px;
     }
 }
 
@@ -17,12 +27,12 @@
     outline: 0;
     font-size: 0;
     line-height: 0;
-    background-color: white;
+    background-color: #D8EEA5;
     position: absolute;
     z-index: 1;
 
     &:hover:enabled {
-        background-color: lightgray;
+        background-color: #D8EEA5;
     }
 
     &.BrainhubCarousel__arrowLeft {
@@ -37,7 +47,7 @@
     }
 
     > span {
-        border-color: black;
+        border-color: #368A3F;
         border-radius: 1px;
         margin-left: -1px;
         padding: 3px;
