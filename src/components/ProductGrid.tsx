@@ -1,12 +1,17 @@
 import "./ProductGrid.scss";
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FarmerProductCard from "./FarmerProductCard";
+import { ProductInterface } from "../pages/Product";
 import cx from "classnames";
+
+interface ProductsInterface {
+  [id: string]: ProductInterface
+}
 
 interface Props {
   title: string;
-  data: any[];
+  data: ProductsInterface;
   onClick?: EventHandler<[]>;
 }
 
@@ -26,9 +31,9 @@ const ProductGrid: React.FC<Props> = (props: Props) => {
   };
 
   const renderPackages = () => {
-    return props.data.map((x, i) => {
+    return Object.keys(props.data).map((x, i) => {
       return (
-        <Link to="/products/1234" key={i}>
+        <Link to={`/product/${x}`} key={i}>
           <FarmerProductCard
             onClick={handleProductClick}
           />

@@ -1,7 +1,7 @@
 import React from "react";
 import SingleCarouselCard, { SingleCarouselCardInterface } from "./SingleCarouselCard";
 import "./SingleCarousel.scss";
-import Carousel, { slidesToShowPlugin, arrowsPlugin } from "@brainhubeu/react-carousel";
+import Carousel, { arrowsPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import { Arrow } from "../Icons";
 
