@@ -1,47 +1,8 @@
 #farmer {
-    .farmer-profile-container {
-        width: 100%;
-    }
-
-    .profile-grid {
-        display: flex;
-        flex-direction: row;
-
-        > aside {
-            width: 50%;
-
-            &:last-child {
-                margin: 12px;
-            }
-        }
-    }
-
-    .img-container {
-        margin: 12px;
-    }
-
-    .name {
-        font-weight: 600;
-        font-size: 16px;
-        margin: 0;
-    }
-
-    .bio {
-        font-size: 14px;
-    }
-
-    .location {
-        display: flex;
-
-        svg {
-            margin-right: 10px;
-        }
-    }
-
-    .quote {
-        font-size: 12px;
-        padding: 16px 12px;
-        background-color: #D8EEA5;
+    .margin-container {
+        padding: 1em;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .profile-grid {
@@ -51,11 +12,28 @@
 
     .fullname {
         font-weight: bold;
+        font-size: xx-large;
     }
 
     .story-container {
         padding: 1em;
-        margin: 1em 0;
+        margin: 1em;
         background-color: #D8EEA5;
+    }
+
+    .location {
+        color: lightsalmon;
+    }
+
+    .profile-desc-container {
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #farmer {
+        .profile-grid {
+            grid-template-columns: 1fr;
+        }
     }
 }
