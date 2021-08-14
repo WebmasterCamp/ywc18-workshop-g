@@ -48,6 +48,24 @@ export const mockFarmers = [
 
 // PRODUCT 
 
+export interface ProductInterface {
+  productId: string;
+  productImages?: string[];
+  productName: string;
+  productBio?: string;
+  tag?: string[];
+  farm: string;
+  description: string;
+  farmerImage?: string;
+  farmerImageCaption?: string;
+  duration?: number;
+  totalPrice: number;
+}
+
+export interface ProductsInterface {
+  [id: string]: ProductInterface
+}
+
 export const mockProduct: ProductInterface = {
   productId: "0",
   productImages: ["/images/orange.png", "/images/orange.png", "/images/orange.png"],

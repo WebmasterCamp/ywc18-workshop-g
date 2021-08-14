@@ -1,10 +1,9 @@
 import React from "react";
 import Card, { CardInterface } from "../Card";
-import Carousel, { arrowsPlugin, slidesToShowPlugin } from "@brainhubeu/react-carousel";
+import Carousel, { slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import "./CarouselComponent.scss";
 import { Link } from "react-router-dom";
-import { Arrow } from "../Icons";
 
 interface CarouselComponentInterface {
   title: string;
