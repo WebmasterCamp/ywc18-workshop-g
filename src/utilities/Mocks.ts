@@ -1,7 +1,5 @@
 // Seasonal Products
 
-import { totalmem } from "os";
-
 export const mockSeasonalProduct = [
   {
     image: "/images/watermelon.webp",
