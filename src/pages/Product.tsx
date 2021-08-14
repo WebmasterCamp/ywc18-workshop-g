@@ -52,6 +52,7 @@ const Product: React.FC = () => {
         <div className="header">
           <h4 className="product-name">{mockProducts[id]?.productName}</h4>
           <div className="tag">{mockProducts[id]?.tag}</div>
+          {/* <p className="duration">ระยะเวลาการรับ</p> */}
         </div>
         <p className="product-caption">{mockProducts[id]?.farm}</p>
         <p className="product-caption">{mockProducts[id]?.productBio}</p>
