@@ -31,12 +31,42 @@ const mockInstructions = [
 ];
 
 const mockTopProducts = [
-  {},
-  {},
-  {},
-  {},
-  {},
-  {}
+  {
+    imgSrc: "./images/fruit-1.svg",
+    label: "ส้มเขียวหวาน",
+    desc: "สวนลุงรีย์ จ.สุโขทัย",
+    remain: 200
+  },
+  {
+    imgSrc: "./images/fruit-2.svg",
+    label: "ส้มเขียวหวาน",
+    desc: "สวนลุงรีย์ จ.สุโขทัย",
+    remain: 200
+  },
+  {
+    imgSrc: "./images/fruit-3.svg",
+    label: "ส้มเขียวหวาน",
+    desc: "สวนลุงรีย์ จ.สุโขทัย",
+    remain: 200
+  },
+  {
+    imgSrc: "./images/fruit-4.svg",
+    label: "ส้มเขียวหวาน",
+    desc: "สวนลุงรีย์ จ.สุโขทัย",
+    remain: 200
+  },
+  {
+    imgSrc: "./images/fruit-1.svg",
+    label: "ส้มเขียวหวาน",
+    desc: "สวนลุงรีย์ จ.สุโขทัย",
+    remain: 200
+  },
+  {
+    imgSrc: "./images/fruit-1.svg",
+    label: "ส้มเขียวหวาน",
+    desc: "สวนลุงรีย์ จ.สุโขทัย",
+    remain: 200
+  }
 ];
 
 const Home: React.FC = () => {
@@ -51,54 +81,44 @@ const Home: React.FC = () => {
   const renderProducts = () => {
     return mockTopProducts.map((x, i) => {
       return (
-        <ProductCard key={i} />
+        <ProductCard key={i} {...x} />
       );
     });
   };
 
   return (
-    <>
-      <main id="home">
-        <HomeBanner />
-        <div className="margin-container">
-          <div className="instruction-container">
-            {renderInstructions()}
-          </div>
-        </div>
-        <CarouselComponent
-          title="เกษตรกรของเรา"
-          subtitle={`เกษตรกรที่เติบโตไปพร้อมกับเรา \n
-          Seedtory ทำงานร่วมกับเกษตรกรผู้ปลูกผลไม้กว่า 50 ราย \n
-          จากทุกภูมิภาคของประเทศไทย`}
-          cards={mockFarmers}
-        />
-        <div className="margin-container">
-          <div className="our-products-container">
-            <h3>Our Products</h3>
-            <div className="sml-grid">
-              {renderProducts()}
-            </div>
-            <div className="btn-container">
-              <Link to="/products">
-                <button className="btn">View All</button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </main>
-      <div className="join-our-community-container">
-        <div className="margin-container">
-          <aside>
-            <h1>Join Our Community</h1>
-            <div>Register to our innovative farmers.</div>
-            <button className="btn">Register</button>
-          </aside>
-          <aside>
-            
-          </aside>
+    <main id="home">
+      <HomeBanner />
+      <div className="margin-container">
+        <div className="instruction-container">
+          {renderInstructions()}
         </div>
       </div>
-    </>
+      <CarouselComponent
+        title="เกษตรกรของเรา"
+        subtitle={`เกษตรกรที่เติบโตไปพร้อมกับเรา \n
+        Seedtory ทำงานร่วมกับเกษตรกรผู้ปลูกผลไม้กว่า 50 ราย \n
+        จากทุกภูมิภาคของประเทศไทย`}
+        cards={mockFarmers}
+      />
+      <div className="margin-container">
+        <div className="seasonal-container">
+          <h3>ผลไม้ตามฤดูกาลในเดือน</h3>
+        </div>
+        <div className="our-products-container">
+          <div className="space-between-header">
+            <h3>ผลไม้พร้อมทาน</h3>
+            <Link className="link" to="/products">ดูทั้งหมด</Link>
+          </div>
+          <div className="sml-grid">
+            {renderProducts()}
+          </div>
+          <div className="btn-container">
+            
+          </div>
+        </div>
+      </div>
+    </main>
   );
 };
 

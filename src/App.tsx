@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Product from "./pages/Product";
 import AllProducts from "./pages/AllProducts";
 import Farmer from "./pages/Farmer";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           <div>404</div>
         </Route>
       </Switch>
+      <Footer />
     </>
   );
 };
