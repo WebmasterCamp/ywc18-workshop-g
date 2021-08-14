@@ -76,7 +76,7 @@ header.desktop {
     top: 0;
     height: 100%;
     max-width: 100vh;
-    width: 262px;
+    width: 240px;
     background-color: white;
     box-shadow: 0 0 1em rgba($color: #000000, $alpha: 0.2);
     transition: 300ms;
@@ -91,6 +91,26 @@ header.desktop {
             display: flex;
             padding: 1em;
         }
+
+        .menu-container {
+            padding: 16px;
+
+            button {
+                margin: 8px 0;
+            }
+        }
+    }
+}
+
+#backdrop {
+    position: absolute;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+
+    &:not(.expanded) {
+        display: none;
     }
 }
 

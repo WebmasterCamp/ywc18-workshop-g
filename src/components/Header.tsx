@@ -1,15 +1,21 @@
 import "./Header.scss";
 import React, { useState } from "react";
 import cx from "classnames";
+import { useHistory } from "react-router-dom";
 
 interface State {
   expanded: boolean;
 }
 
 const Header: React.FC = () => {
-  const [ state, setState ] = useState<State>({
+  const history = useHistory();
+  const [state, setState] = useState<State>({
     expanded: false
   });
+
+  const navigate = () => {
+    history.push("/");
+  };
 
   const expand = () => {
     setState((prev) => ({
@@ -44,13 +50,7 @@ const Header: React.FC = () => {
             <div className="img-container">
               <img src="/images/logo.svg" alt="logo" width={32} height={32} />
             </div>
-            <div className="link-container">
-              <div>Home</div>
-              <div>Our Products</div>
-              <div>Our Framers</div>
-              <div>My Plants</div>
-              <div>About Us</div>
-            </div>
+            <div>Seedtory</div>
           </aside>
           <aside>
             <div className="img-container">
@@ -61,13 +61,16 @@ const Header: React.FC = () => {
       </header>
       <nav id="sidenav" className={cx({ "expanded": state.expanded })}>
         <div className="content-container">
-          <div className="nav-header">
-            <div className="img-container">
-              <img src="./images/hamburger.svg" alt="icon" onClick={expand} width={32} height={32} />
-            </div>
+          <div className="menu-container">
+            <button onClick={navigate}>หน้าแรก</button>
+            <button disabled={true}>ซื้อ - จองผลไม้</button>
+            <button disabled={true}>เกษตรกรในเครือข่าย</button>
+            <button disabled={true}>เกี่ยวกับเรา</button>
+            <button disabled={true}>เข้าสู่ระบบ</button>
           </div>
         </div>
       </nav>
+      <div id="backdrop" className={cx({ "expanded": state.expanded })} onClick={expand} />
     </>
   );
 };
