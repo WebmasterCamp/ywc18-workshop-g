@@ -1,11 +1,12 @@
-.carousel-card {
-    height: 200px;
-    min-width: 200px;
+.card-with-desc {
+    height: 143px;
+    min-width: 123px;
     position: relative;
     
     .card-image {
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 
     .description {
