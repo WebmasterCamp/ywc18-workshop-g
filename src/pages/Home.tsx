@@ -1,11 +1,13 @@
-import "./App.scss";
+import "./Home.scss";
 import React, { Component } from "react";
 
 const Home: React.FC = () => {
   return (
-    <div id="home">
-
-    </div>
+    <main id="home">
+      <div className="margin-container">
+        <div className="sample-box"></div>
+      </div>
+    </main>
   );
 };
 
