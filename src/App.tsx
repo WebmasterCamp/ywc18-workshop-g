@@ -17,7 +17,7 @@ const App: React.FC = () => {
         <Route path="/viewAll" exact={true}>
           <ViewAll />
         </Route>
-        <Route path="/products/:id" exact={true}>
+        <Route path="/product/:id" exact={true}>
           <Product />
         </Route>
         <Route path="*">
