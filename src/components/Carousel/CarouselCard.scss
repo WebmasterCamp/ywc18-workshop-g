@@ -1,0 +1,20 @@
+.carousel-card {
+    height: 200px;
+    min-width: 200px;
+    position: relative;
+    
+    .card-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .description {
+        margin: 0;
+        position: absolute;
+        background-color: white;
+        padding: 0 16px;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
