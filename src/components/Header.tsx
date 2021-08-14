@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             <div className="img-container">
               <img src="./images/logo.svg" alt="logo" width={32} height={32} />
             </div>
-            <div>logo</div>
+            <div>Seedtory</div>
           </aside>
           <aside>
             <div className="img-container">
