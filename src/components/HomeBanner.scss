@@ -1,7 +1,8 @@
 .home-banner {
     background: linear-gradient(357.48deg, #000000 -6.18%, rgba(0, 0, 0, 0) 49.63%), 
     linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
-    url(./assets/banner.webp);
+    url(./assets/banner.webp) no-repeat;
+    background-size: cover;
     width: 100%;
     height: 224px;
     align-items: center;

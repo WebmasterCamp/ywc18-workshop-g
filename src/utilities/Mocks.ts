@@ -27,18 +27,21 @@ export const mockSeasonalProduct = [
 
 export const mockFarmers = [
   {
-    image: "/images/farmer.webp",
-    title: "",
+    image: "/images/farmer-1.webp",
+    title: "ลุงพล",
+    description: "มังคุด - recommend",
     linkTo: "farmers/1234"
   },
   {
-    image: "/images/farmer.webp",
-    title: "",
+    image: "/images/farmer-3.webp",
+    title: "ป้าแต๋น",
+    description: "มะม่วง - recommend",
     linkTo: "farmers/1234"
   },
   {
-    image: "/images/farmer.webp",
-    title: "",
+    image: "/images/farmer-2.webp",
+    title: "ลุงเริง",
+    description: "ส้มโอ - recommend",
     linkTo: "farmers/1234"
   },
 ];

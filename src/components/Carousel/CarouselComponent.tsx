@@ -41,7 +41,7 @@ const CarouselComponent: React.FC<CarouselComponentInterface> = (props: Carousel
     <div>
       <div className="header">
         <h3>{title}</h3>
-        {subtitle && <p>{subtitle}</p>}
+        {subtitle && <p className="subtitle">{subtitle}</p>}
         {viewAllLink && <Link to={viewAllLink}>View all</Link>}
       </div>
       <Carousel
@@ -65,7 +65,7 @@ const CarouselComponent: React.FC<CarouselComponentInterface> = (props: Carousel
         }}
       >
         {cards.map((item, index) => 
-          <Card key={index} image={item.image} description={item.description} linkTo={item.linkTo} />
+          <Card key={index} image={item.image} title={item.title} description={item.description} linkTo={item.linkTo} />
         )}
       </Carousel>
     </div>
