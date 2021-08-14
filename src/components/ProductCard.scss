@@ -1,0 +1,25 @@
+.product-crad {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+
+    height: 248px;
+    width: 196px;
+
+    .upper {
+        flex-grow: 1;
+        background-color: grey;
+    }
+
+    .lower {
+        height: 64px;
+        background-color: lightgrey;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .product-crad {
+        width: 100%;
+        height: 208px;
+    }
+}
