@@ -50,10 +50,10 @@ export const mockFarmers = [
 
 export const mockProduct: ProductInterface = {
   productId: "0",
-  productImages: ["/images/watermelon.webp", "/images/watermelon.webp", "/images/watermelon.webp"],
-  productName: "ต้นมังคุด",
-  productBio: "ต้นมังคุดที่ผ่านการคัดเลือกจากพ่อแม่พันธุ์ชั้นดี สู่รุ่นลูกคุณภาพสูงขนาด 24 CM",
-  tag: ["ยอดฮิต"],
+  productImages: ["/images/orange.png", "/images/orange.png", "/images/orange.png"],
+  productName: "ส้มเขียวหวาน",
+  productBio: "ต้นส้มเขียวหวานที่ผ่านการคัดเลือกจากพ่อแม่พันธุ์ชั้นดี สู่รุ่นลูกคุณภาพสูงขนาด 24 CM",
+  tag: ["ขายดี"],
   duration: 1,
   farm: "สวนลุงชัย",
   description: "“การดูเเลมังคุดเนี่ย สิ่งแรกที่ต้องคำนึงเลยคือเรื่องสภาพอากาศครับ เพราะมังคุดชอบอากาศร้อนชื้น ต้องพยายามไม่ให้...”",
