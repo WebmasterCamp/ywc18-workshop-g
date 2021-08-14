@@ -42,3 +42,22 @@ export const mockFarmers = [
     linkTo: "farmers/1234"
   },
 ];
+
+export const mockProducts = [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+];

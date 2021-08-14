@@ -4,29 +4,4 @@
         max-width: 900px;
         margin: 0 auto;
     }
-
-    .sml-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
-        gap: 1em;
-    }
-
-    .filter-contaier {
-        display: flex;
-        margin: 1em 0;
-
-        > div {
-            padding: 2px 1em;
-            background-color: #E5E5E5;
-            cursor: pointer;
-
-            &.sel {
-                background-color: #C4C4C4;
-            }
-
-            &:not(:last-child) {
-                margin-right: 0.5em;
-            }
-        }
-    }
 }
