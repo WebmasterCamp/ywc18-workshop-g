@@ -12,9 +12,10 @@ const Farmer: React.FC = () => {
             <aside className="img-container">
               <img src="/images/farmer-1.webp" alt="profile-image" />
             </aside>
-            <aside>
+            <aside className="profile-desc-container">
               <div className="fullname">ลุงรีย์ (ชัยวัตน์ พัฒนาอาภรณ์)</div>
               <div>“ผักผลไม้มีตั้งหลายอย่าง แต่ไม่รู้ทำไมเธอถึงเลือกมัน”</div>
+              <div className="location">สุโขทัย</div>
             </aside>
           </div>
           <div className="story-container">

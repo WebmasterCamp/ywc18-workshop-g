@@ -1,7 +1,14 @@
 import "./Footer.scss";
 import React from "react";
+import { useHistory } from "react-router";
 
 const Footer: React.FC = () => {
+  const history = useHistory();
+
+  const navigate = () => {
+    history.push("/");
+  };
+
   return (
     <footer>
       <div className="margin-container">
@@ -10,7 +17,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="link-grid">
           <aside>
-            <div>Home</div>
+            <button onClick={navigate}>Home</button>
             <div>Our Products</div>
             <div>Our Framers</div>
           </aside>
