@@ -1,5 +1,6 @@
 import "./ProductCard.scss";
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 interface Props {
   imgSrc: string;
@@ -9,17 +10,25 @@ interface Props {
 }
 
 const ProductCard: React.FC<Props> = (props: Props) => {
+  const history = useHistory();
+
+  const navigate = () => {
+    history.push("/product/0");
+  };
+
   return (
-    <div className="product-card">
-      <div className="upper" style={{ backgroundImage: `url(${props.imgSrc})` }}>
-        
+    <button onClick={navigate}>
+      <div className="product-card">
+        <div className="upper" style={{ backgroundImage: `url(${props.imgSrc})` }}>
+          
+        </div>
+        <div className="lower">
+          <div className="label">{props.label}</div>
+          <div className="desc">{props.desc}</div>
+          <div className="remain">เหลือ {props.remain} โล</div>
+        </div>
       </div>
-      <div className="lower">
-        <div className="label">{props.label}</div>
-        <div className="desc">{props.desc}</div>
-        <div className="remain">เหลือ {props.remain} โล</div>
-      </div>
-    </div>
+    </button>
   );
 };
 
