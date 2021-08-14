@@ -102,7 +102,7 @@ const Home: React.FC = () => {
         cards={mockFarmers}
       />
       <div className="margin-container">
-        <div className="seasonal-container">
+        <div className="seasonal-container" hidden>
           <h3>ผลไม้ตามฤดูกาลในเดือน</h3>
         </div>
         <div className="our-products-container">

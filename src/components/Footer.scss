@@ -10,4 +10,16 @@ footer {
     .img-container {
         width: 64px;
     }
+
+    .link-grid {
+        color: #B0B0B0;
+        display: grid;
+        grid-template-columns: repeat(2, 186px);
+        margin: 1em 0;
+    }
+
+    .term-link {
+        margin-top: 1em;
+        color: #B0B0B0;
+    }
 }
