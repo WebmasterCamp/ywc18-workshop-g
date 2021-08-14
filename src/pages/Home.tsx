@@ -31,12 +31,6 @@ const mockTopProducts = [
   {}
 ];
 
-const mockPackages = [
-  {},
-  {},
-  {}
-];
-
 const Home: React.FC = () => {
   const renderInstructions = () => {
     return mockInstructions.map((x, i) => {

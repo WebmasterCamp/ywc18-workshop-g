@@ -1,5 +1,5 @@
 import "./ProductCard.scss";
-import React, { Component } from "react";
+import React from "react";
 
 const ProductCard: React.FC = () => {
   return (

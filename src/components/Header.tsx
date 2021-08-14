@@ -1,5 +1,5 @@
 import "./Header.scss";
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import cx from "classnames";
 
 interface State {

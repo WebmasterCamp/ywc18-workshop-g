@@ -1,7 +1,5 @@
 import "./AllProducts.scss";
 import React from "react";
-import FarmerProductCard from "../components/FarmerProductCard";
-import { Link } from "react-router-dom";
 import { mockProducts } from "../utilities/Mocks";
 import ProductGrid from "../components/ProductGrid";
 

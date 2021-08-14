@@ -1,5 +1,5 @@
 import "./InstructionCard.scss";
-import React, { Component } from "react";
+import React from "react";
 
 interface Props {
   index: number;
