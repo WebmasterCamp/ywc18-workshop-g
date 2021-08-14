@@ -12,7 +12,7 @@ const Checkout: React.FC = () => {
         </div>
         <div className="content">
           <LocationIcon />
-          <p className="address">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor </p>
+          <p className="address">15 เฉลิมพระเกียรติ 6 สุขุมวิท 103 ถนนสุขุมวิท 110 แขวงหนองบอน เขตประเวศ กทม. 10200</p>
         </div>
       </div>
       <div className="horizontal" />
@@ -45,10 +45,6 @@ const Checkout: React.FC = () => {
           <h4>วิธีการชำระเงิน</h4>
         </div>
         <div className="content">
-          <span>
-            <input type="radio" id="credit-card" name="payment" value="0" />
-            <label htmlFor="credit-card">Credit card</label>
-          </span>
           <span>
             <input type="radio" id="mobile-banking" name="payment" value="1" />
             <label htmlFor="mobile-banking">Mobile Banking</label>
