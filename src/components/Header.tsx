@@ -23,17 +23,17 @@ const Header: React.FC = () => {
       <header className="mobile">
         <div className="margin-wrapper">
           <aside>
-            <img src="./images/hamburger.svg" alt="icon" onClick={expand} />
+            <img src="/images/hamburger.svg" alt="icon" onClick={expand} />
           </aside>
           <aside>
             <div className="img-container">
-              <img src="./images/logo.svg" alt="logo" width={32} height={32} />
+              <img src="/images/logo.svg" alt="logo" width={32} height={32} />
             </div>
             <div>Seedtory</div>
           </aside>
           <aside>
             <div className="img-container">
-              <img src="./images/cart.svg" alt="icon" width={24} height={24} />
+              <img src="/images/cart.svg" alt="icon" width={24} height={24} />
             </div>
           </aside>
         </div>
@@ -42,13 +42,13 @@ const Header: React.FC = () => {
         <div className="margin-wrapper">
           <aside>
             <div className="img-container">
-              <img src="./images/logo.svg" alt="logo" width={32} height={32} />
+              <img src="/images/logo.svg" alt="logo" width={32} height={32} />
             </div>
             <div>Seedtory</div>
           </aside>
           <aside>
             <div className="img-container">
-              <img src="./images/cart.svg" alt="icon" width={24} height={24} />
+              <img src="/images/cart.svg" alt="icon" width={24} height={24} />
             </div>
           </aside>
         </div>
