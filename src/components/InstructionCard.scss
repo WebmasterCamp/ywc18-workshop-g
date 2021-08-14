@@ -5,6 +5,11 @@
     flex-flow: column;
     text-align: center;
 
+    img {
+        height: 80px;
+        width: 80px;
+    }
+
     .span-container {
         display: flex;
         align-items: center;

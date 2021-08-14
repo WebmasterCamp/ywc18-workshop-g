@@ -1,6 +1,12 @@
 footer {
     background-color: #F9F9F9F0;
 
+    aside {
+        div, button {
+            width: fit-content;
+        }
+    }
+
     .margin-container {
         padding: 1em;
         max-width: 900px;

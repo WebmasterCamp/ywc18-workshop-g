@@ -20,8 +20,6 @@ const Footer: React.FC = () => {
             <button onClick={navigate}>Home</button>
             <div>Our Products</div>
             <div>Our Framers</div>
-          </aside>
-          <aside>
             <div>My Plants</div>
             <div>About Us</div>
           </aside>
