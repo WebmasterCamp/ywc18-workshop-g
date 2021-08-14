@@ -1,26 +1,45 @@
+@import "../styles/variables";
+
 .farmer-product-card {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
-
-    height: 268px;
-    width: 100%;
-
+    overflow: hidden;
+    height: 328px;
+    width: 226px;
+    border-radius: 8px;
+    box-shadow: 0 2px 0.5em rgba($color: #000000, $alpha: 0.1);
+    border: 1px solid $border-color;
+    
     .upper {
         flex-grow: 1;
         background-color: grey;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .lower {
-        height: 64px;
-        background-color: lightgrey;
+        padding: 0.5em 1em;
+        height: 160px;
+        text-align: left;
+
+        .label {
+            font-weight: bold;
+        }
+    
+        .remain {
+            margin-top: 0.5em;
+            font-weight: bold;
+            color: $light-green-color;
+        }
     }
 }
 
-/* MOBILE */
-
 @media only screen and (max-width: 600px) {
-    .farmer-product-card {
-        height: 196px;
+    .product-card {
+        width: 100%;
+        height: 228px;
     }
 }

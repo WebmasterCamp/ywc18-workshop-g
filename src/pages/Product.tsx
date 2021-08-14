@@ -5,18 +5,6 @@ import "@brainhubeu/react-carousel/lib/style.css";
 import { useHistory, useParams } from "react-router-dom";
 import { mockProducts } from "../utilities/Mocks";
 
-export interface ProductInterface {
-  productId: string;
-  productImages?: string[];
-  productName: string;
-  productBio?: string;
-  tag?: string[];
-  farm: string;
-  description: string;
-  farmerImage?: string;
-  farmerImageCaption?: string;
-}
-
 const Product: React.FC = () => {
   const [imageIndex, setImageIndex] = useState(0);
   const history = useHistory();
